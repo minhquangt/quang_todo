@@ -1,0 +1,83 @@
+.app-container {
+    width: 500px;
+    height: 500px;
+    margin: 80px auto;
+    background-color: #161826;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.app-container .title {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.nothing {
+    text-align: center;
+}
+
+.add-todo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#input-todo {
+    background-color: transparent;
+    width: 300px;
+    height: 20px;
+    display: block;
+    border: 1px solid #4212c3;
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+}
+
+#input-todo:focus {
+    outline: #4212c3;
+}
+
+.btn-add {
+    background-color: #4212c3;
+    border: none;
+    width: 60px;
+    color: white;
+    cursor: pointer;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1480ff;
+    width: 400px;
+    margin: 30px auto;
+    border-radius: 6px;
+    padding: 0 8px;
+}
+
+.todo-item button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 26px;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+.todo-item.done {
+    background-color: #bdbbbbe3;
+}
+
+.todo-item.done .todo-text {
+    text-decoration: line-through;
+}
+
+.todo-item.done .done-btn {
+    color: lime;
+}
+
+.todo-item.edit {
+    opacity: 0;
+    visibility: hidden;
+}
