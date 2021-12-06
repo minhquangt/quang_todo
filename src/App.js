@@ -47,7 +47,7 @@ class App extends Component {
 
     addTodo = () => {
         const { newItem, edit, todoItems } = this.state
-        if (newItem.trim === '') return;
+        if (newItem.trim() === '') return;
         if (!edit) {
             this.setState({
                 newItem: '',
@@ -81,7 +81,6 @@ class App extends Component {
 
     render() {
         const { newItem, todoItems, edit } = this.state
-        console.log(todoItems);
         return (
             <div className="App">
                 <div className="app-container">
